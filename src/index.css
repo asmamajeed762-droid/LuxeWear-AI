@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:"Poppins",sans-serif;
+  background:#ffffff;
+  color:#111827;
+  min-height:100vh;
+}
+
+a{
+  text-decoration:none;
+}
+
+button{
+  cursor:pointer;
+  font-family:inherit;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+
+/* Luxury Theme */
+:root{
+  --primary:#0b1f3a;
+  --gold:#d4af37;
+  --light:#f8fafc;
+  --dark:#111827;
+}
+
+/* Container */
+.container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+}
+
+/* Buttons */
+.btn-primary{
+  background:var(--primary);
+  color:white;
+  padding:12px 28px;
+  border-radius:30px;
+  display:inline-block;
+  transition:.3s;
+}
+
+.btn-primary:hover{
+  background:var(--gold);
+  color:black;
+}
+
+.btn-gold{
+  background:var(--gold);
+  color:black;
+  padding:12px 28px;
+  border-radius:30px;
+  display:inline-block;
+  transition:.3s;
+}
+
+.btn-gold:hover{
+  transform:translateY(-3px);
+}
+
+/* Sections */
+.section{
+  padding:70px 0;
+}
+
+.section-title{
+  text-align:center;
+  font-size:35px;
+  font-weight:700;
+  color:var(--primary);
+  margin-bottom:40px;
+}
+
+/* Cards */
+.card{
+  background:white;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+}
+
+/* Rating */
+.rating{
+  color:#f5b301;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar{
+  width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#d4af37;
+  border-radius:20px;
+}
+
+/* Mobile */
+@media(max-width:768px){
+  .container{
+    width:94%;
+  }
+  .section{
+    padding:50px 0;
+  }
+  .section-title{
+    font-size:28px;
+  }
+}
